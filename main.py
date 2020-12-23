@@ -3,7 +3,7 @@ from time import sleep
 import discord
 import treasure_rolling_sys
 
-TOKEN = 'xxxxxxxxxxxxxxxx'
+TOKEN = 'xxxxxxxxxxxxx'
 
 client = discord.Client()
 
