@@ -2,8 +2,9 @@ import asyncio
 from time import sleep
 import discord
 import treasure_rolling_sys
+import combat_rolling
 
-TOKEN = 'xxxxxxxxxxxxx'
+TOKEN = 'xxxxxxxxxxxxxxxx'
 
 client = discord.Client()
 
@@ -91,12 +92,13 @@ async def on_message(message):
         file = discord.File("Monsters/basilisk.png", filename="Monsters/basilisk.png")
         await message.channel.send("Monsters/basilisk.png", file=file)
 
-    else:
-        pass
-
-    if message.content.startwith("?treasure_roll"):
+    elif message.content.startwith("?treasure_roll"):
         sleep(5)
         asyncio.run(treasure_rolling_sys)
+
+    elif message.content.startwith("combat_roll"):
+        asyncio.run(combat_rolling)
+
     # Maps Go Here
     if message.content.startswith('?planesmap'):
         file = discord.File("Maps/Planes.png", filename="Maps/Planes.png")

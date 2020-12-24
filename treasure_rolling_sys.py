@@ -1,10 +1,8 @@
 import discord
 from random import randint
-from time import sleep
-import asyncio
-import dice_roll
 
-TOKEN = 'xxxxxxxxxxxxx'
+
+TOKEN = 'xxxxxxxxxxx'
 
 client = discord.Client()
 
@@ -15,27 +13,37 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    treasure_roll = randint(1, 30)
+    treasure_roll = randint(1, 100)
 
     if treasure_roll <= 30:
-        sleep(5)
-        asyncio.run(dice_roll)
-
-    elif treasure_roll <= 60:
         await message.channel.send(treasure_roll)
-        await message.channel.send("Please roll 4d6 for SP treasure!")
+        dice_roll = randint(1, 6) * 5
+        await message.channel.send(dice_roll)
+        await message.channel.send("This is CP treasure.")
 
-    elif treasure_roll <= 70:
+    elif treasure_roll > 30 and treasure_roll <= 60:
         await message.channel.send(treasure_roll)
-        await message.channel.send("Please roll 3d6 for EP treasure!")
+        dice_roll = randint(1, 6) * 4
+        await message.channel.send(dice_roll)
+        await message.channel.send("This is SP treasure.")
 
-    elif treasure_roll <= 95:
+    elif treasure_roll > 60 and treasure_roll <= 70:
         await message.channel.send(treasure_roll)
-        await message.channel.send("Please roll 3d6 for GP treasure!")
+        dice_roll = randint(1, 6) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("This is EP treasure.")
 
-    elif treasure_roll <= 100:
+    elif treasure_roll > 70 and treasure_roll <= 95:
         await message.channel.send(treasure_roll)
-        await message.channel.send("Please roll 1d6 for PP treasure!")
+        dice_roll = randint(1, 6) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("This is GP treasure.")
+
+    elif treasure_roll > 95 and treasure_roll <= 100:
+        await message.channel.send(treasure_roll)
+        dice_roll = randint(1, 6)
+        await message.channel.send(dice_roll)
+        await message.channel.send("This is PP treasure.")
 
 
 @client.event
