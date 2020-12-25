@@ -101,25 +101,25 @@ async def on_message(message):
             await message.channel.send(dice_roll)
             await message.channel.send("This is CP treasure.")
 
-        elif treasure_roll > 30 and treasure_roll <= 60:
+        elif 30 < treasure_roll <= 60:
             await message.channel.send(treasure_roll)
             dice_roll = randint(1, 6) * 4
             await message.channel.send(dice_roll)
             await message.channel.send("This is SP treasure.")
 
-        elif treasure_roll > 60 and treasure_roll <= 70:
+        elif 60 < treasure_roll <= 70:
             await message.channel.send(treasure_roll)
             dice_roll = randint(1, 6) * 3
             await message.channel.send(dice_roll)
             await message.channel.send("This is EP treasure.")
 
-        elif treasure_roll > 70 and treasure_roll <= 95:
+        elif 70 < treasure_roll <= 95:
             await message.channel.send(treasure_roll)
             dice_roll = randint(1, 6) * 3
             await message.channel.send(dice_roll)
             await message.channel.send("This is GP treasure.")
 
-        elif treasure_roll > 95 and treasure_roll <= 100:
+        elif 95 < treasure_roll <= 100:
             await message.channel.send(treasure_roll)
             dice_roll = randint(1, 6)
             await message.channel.send(dice_roll)
@@ -287,6 +287,11 @@ async def on_message(message):
         dice_roll = randint(1, 12) * 6
         await message.channel.send(dice_roll)
         await message.channel.send("damage")
+
+    elif message.content.startswith('1d20'):
+        dice_roll = randint(1, 20)
+        await message.channel.send(dice_roll)
+        await message.channel.send("Your initiative, do you get to go first or last?")
 
     else:
         pass
