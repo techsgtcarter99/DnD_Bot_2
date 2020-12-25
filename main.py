@@ -1,8 +1,5 @@
-import asyncio
-from time import sleep
 import discord
-import treasure_rolling_sys
-import combat_rolling
+from random import randint
 
 TOKEN = 'xxxxxxxxxxxxxxxx'
 
@@ -92,17 +89,207 @@ async def on_message(message):
         file = discord.File("Monsters/basilisk.png", filename="Monsters/basilisk.png")
         await message.channel.send("Monsters/basilisk.png", file=file)
 
-    elif message.content.startwith("?treasure_roll"):
-        sleep(5)
-        asyncio.run(treasure_rolling_sys)
+    else:
+        pass
 
-    elif message.content.startwith("combat_roll"):
-        asyncio.run(combat_rolling)
+    if message.content.startswith("?treasure_roll"):
+        treasure_roll = randint(1, 100)
+
+        if treasure_roll <= 30:
+            await message.channel.send(treasure_roll)
+            dice_roll = randint(1, 6) * 5
+            await message.channel.send(dice_roll)
+            await message.channel.send("This is CP treasure.")
+
+        elif treasure_roll > 30 and treasure_roll <= 60:
+            await message.channel.send(treasure_roll)
+            dice_roll = randint(1, 6) * 4
+            await message.channel.send(dice_roll)
+            await message.channel.send("This is SP treasure.")
+
+        elif treasure_roll > 60 and treasure_roll <= 70:
+            await message.channel.send(treasure_roll)
+            dice_roll = randint(1, 6) * 3
+            await message.channel.send(dice_roll)
+            await message.channel.send("This is EP treasure.")
+
+        elif treasure_roll > 70 and treasure_roll <= 95:
+            await message.channel.send(treasure_roll)
+            dice_roll = randint(1, 6) * 3
+            await message.channel.send(dice_roll)
+            await message.channel.send("This is GP treasure.")
+
+        elif treasure_roll > 95 and treasure_roll <= 100:
+            await message.channel.send(treasure_roll)
+            dice_roll = randint(1, 6)
+            await message.channel.send(dice_roll)
+            await message.channel.send("This is PP treasure.")
+
+    else:
+        pass
 
     # Maps Go Here
     if message.content.startswith('?planesmap'):
         file = discord.File("Maps/Planes.png", filename="Maps/Planes.png")
         await message.channel.send("Maps/Planes.png", file=file)
+
+    else:
+        pass
+
+    # Combat Rolls Go here
+
+    if message.content.startswith('1d4'):
+        dice_roll = randint(1, 4)
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('1d6'):
+        dice_roll = randint(1, 6)
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('1d8'):
+        dice_roll = randint(1, 8)
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('1d10'):
+        dice_roll = randint(1, 10)
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('1d12'):
+        dice_roll = randint(1, 12)
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('2d4'):
+        dice_roll = randint(1, 4) * 2
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('2d6'):
+        dice_roll = randint(1, 6) * 2
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('2d8'):
+        dice_roll = randint(1, 8) * 2
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('2d10'):
+        dice_roll = randint(1, 10) * 2
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('2d12'):
+        dice_roll = randint(1, 12) * 2
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('3d4'):
+        dice_roll = randint(1, 4) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('3d6'):
+        dice_roll = randint(1, 6) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('3d8'):
+        dice_roll = randint(1, 8) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('2d10'):
+        dice_roll = randint(1, 10) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('3d12'):
+        dice_roll = randint(1, 12) * 3
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('4d4'):
+        dice_roll = randint(1, 4) * 4
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('4d6'):
+        dice_roll = randint(1, 6) * 4
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('4d8'):
+        dice_roll = randint(1, 8) * 4
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('4d10'):
+        dice_roll = randint(1, 10) * 4
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('4d12'):
+        dice_roll = randint(1, 12) * 4
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('5d4'):
+        dice_roll = randint(1, 4) * 5
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('5d6'):
+        dice_roll = randint(1, 6) * 5
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('5d8'):
+        dice_roll = randint(1, 8) * 5
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('5d10'):
+        dice_roll = randint(1, 10) * 5
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('5d12'):
+        dice_roll = randint(1, 12) * 5
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('6d4'):
+        dice_roll = randint(1, 4) * 6
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('6d6'):
+        dice_roll = randint(1, 6) * 6
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('6d8'):
+        dice_roll = randint(1, 8) * 6
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('6d10'):
+        dice_roll = randint(1, 10) * 6
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    elif message.content.startswith('6d12'):
+        dice_roll = randint(1, 12) * 6
+        await message.channel.send(dice_roll)
+        await message.channel.send("damage")
+
+    else:
+        pass
 
 
 @client.event
