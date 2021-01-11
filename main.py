@@ -1,7 +1,7 @@
 import discord
 from random import randint
 
-TOKEN = 'xxxxxxxxxxxxxxxx'
+TOKEN = 'xxxxxxxxxxxxxxx'
 
 client = discord.Client()
 
@@ -83,6 +83,49 @@ async def on_message(message):
     elif message.content.startswith('basilisk'):
         file = discord.File("Monsters/basilisk.png", filename="Monsters/basilisk.png")
         await message.channel.send("Monsters/basilisk.png", file=file)
+
+    elif message.content.startswith('behir'):
+        file = discord.File("Monsters/behir.png", filename="Monsters/behir.png")
+        await message.channel.send("Monsters/behir.png", file=file)
+
+    elif message.content.startswith('beholder'):
+        file = discord.File("Monsters/beholder1.png", filename="Monsters/beholder1.png")
+        await message.channel.send("Monsters/beholder1.png", file=file)
+        file = discord.File("Monsters/beholder2.png", filename="Monsters/beholder2.png")
+        await message.channel.send("Monsters/beholder2.png", file=file)
+
+    elif message.content.startswith('deathtyrant'):
+        file = discord.File("Monsters/death_tyrant1.png", filename="Monsters/death_tyrant1.png")
+        await message.channel.send("Monsters/death_tyrant1.png", file=file)
+        file = discord.File("Monsters/death_tyrant2.png", filename="Monsters/death_tyrant2.png")
+        await message.channel.send("Monsters/death_tyrant2.png", file=file)
+
+    elif message.content.startswith('spectator'):
+        file = discord.File("Monsters/spectator.png", filename="Monsters/spectator.png")
+        await message.channel.send("Monsters/spectator.png", file=file)
+
+    elif message.content.startswith('needleblight'):
+        file = discord.File("Monsters/Needle_Blight-1.png", filename="Monsters/Needle_Blight-1.png")
+        await message.channel.send("Monsters/Needle_Blight-1.png", file=file)
+        file = discord.File("Monsters/Needle_Blight-2.png", filename="Monsters/Needle_Blight-2.png")
+        await message.channel.send("Monsters/Needle_Blight-2.png", file=file)
+
+    elif message.content.startswith('twigblight'):
+        file = discord.File("Monsters/Twig_Blight.png", filename="Monsters/Twig_Blight.png")
+        await message.channel.send("Monsters/Twig_Blight.png", file=file)
+
+    elif message.content.startswith('vineblight'):
+        file = discord.File("Monsters/Vine_Blight.png", filename="Monsters/Vine_Blight.png")
+        await message.channel.send("Monsters/Vine_Blight.png", file=file)
+
+    elif message.content.startswith('bugbear'):
+        file = discord.File("Monsters/bugbear.png", filename="Monsters/bugbear.png")
+        await message.channel.send("Monsters/bugbear.png", file=file)
+
+    elif message.content.startswith('bugbearchief'):
+        file = discord.File("Monsters/bugbearchief.png", filename="Monsters/bugbearchief.png")
+        await message.channel.send("Monsters/bugbearchief.png", file=file)
+
 
     else:
         pass
@@ -254,7 +297,7 @@ async def on_message(message):
     else:
         pass
 
-    # treasure gemstone rolling
+    # treasure 10gp gemstone rolling
 
     if message.content.startswith('10gpgemstones'):
         dice_roll = randint(1, 12)
@@ -298,6 +341,379 @@ async def on_message(message):
     else:
         pass
 
+        # 50gp treasure rolling
+
+    if message.content.startswith('50gpgemstones'):
+        dice_roll = randint(1, 12)
+
+        if dice_roll == 1:
+            await message.channel.send("Bloodstone (opaque dark gray with red flecks)")
+
+        elif dice_roll == 2:
+            await message.channel.send("Carnelian (opaque orange to red-brown)")
+
+        elif dice_roll == 3:
+            await message.channel.send("Chalcedony (opaque white)")
+
+        elif dice_roll == 4:
+            await message.channel.send("Chrysoprase (translucent green)")
+
+        elif dice_roll == 5:
+            await message.channel.send("Citrine (transparent pale yellow-brown)")
+
+        elif dice_roll == 6:
+            await message.channel.send("Jasper (opaque blue, black, or brown)")
+
+        elif dice_roll == 7:
+            await message.channel.send("Moonstone (translucent white with pale blue glow)")
+
+        elif dice_roll == 8:
+            await message.channel.send("Onyx (opaque bands of black and white, or pure black or white)")
+
+        elif dice_roll == 9:
+            await message.channel.send("Quartz (transparent white, smoky gray, or yellow)")
+
+        elif dice_roll == 10:
+            await message.channel.send("Sardonyx (opaque bands of red and white)")
+
+        elif dice_roll == 11:
+            await message.channel.send("Star rose quartz (trasnlucent rosy stone with white star-shaped center")
+
+        elif dice_roll == 12:
+            await message.channel.send("Zircon (transparent pale blue-green)")
+
+    else:
+        pass
+
+    # 100gp gemstones
+
+    if message.content.startswith('100gpgemstones'):
+        dice_roll = randint(1, 10)
+
+        if dice_roll == 1:
+            await message.channel.send("Amber (transparent watery gold to rich gold)")
+
+        elif dice_roll == 2:
+            await message.channel.send("Amethyst (transparent deep purple)")
+
+        elif dice_roll == 3:
+            await message.channel.send("Chrysoberyl (transparent yellow-green to pale green)")
+
+        elif dice_roll == 4:
+            await message.channel.send("Coral (opaque crimson)")
+
+        elif dice_roll == 5:
+            await message.channel.send("Garnet (transparent red, brown-green, or violet)")
+
+        elif dice_roll == 6:
+            await message.channel.send("Jade (translucent light green, deep green, or white)")
+
+        elif dice_roll == 7:
+            await message.channel.send("Jet (opaque deep black)")
+
+        elif dice_roll == 8:
+            await message.channel.send("Pearl (opaque lustrous white, yellow, or pink)")
+
+        elif dice_roll == 9:
+            await message.channel.send("Spinel (transparent red, red-brown, or deep green)")
+
+        elif dice_roll == 10:
+            await message.channel.send("Tourmaline (transparent pale green, blue, brown, or red")
+
+    else:
+        pass
+
+        # 500gp gemstones
+
+    if message.content.startswith('500gpgemstones'):
+        dice_roll = randint(1, 6)
+
+        if dice_roll == 1:
+            await message.channel.send("Alexandrite (transparent dark green)")
+
+        elif dice_roll == 2:
+            await message.channel.send("Aquamarine (transparent pale blue-green)")
+
+        elif dice_roll == 3:
+            await message.channel.send("Black pearl (opaque pure black)")
+
+        elif dice_roll == 4:
+            await message.channel.send("Blue spinel (transparent deep blue)")
+
+        elif dice_roll == 5:
+            await message.channel.send("Peridot (transparent rich olive green)")
+
+        elif dice_roll == 6:
+            await message.channel.send("Topaz (transparent golden yellow)")
+    else:
+        pass
+
+        # 1000gp gemstones
+
+    if message.content.startswith('1000gpgemstones'):
+        dice_roll = randint(1, 8)
+
+        if dice_roll == 1:
+            await message.channel.send("Black opal (translucent dark green with black mottling and golden flecks")
+
+        elif dice_roll == 2:
+            await message.channel.send("Blue sapphire (transparent blue-white to medium blue)")
+
+        elif dice_roll == 3:
+            await message.channel.send("Emerald (transparent deep bright green)")
+
+        elif dice_roll == 4:
+            await message.channel.send("Fire opal (translucent fiery red)")
+
+        elif dice_roll == 5:
+            await message.channel.send("Opal (translucent pale blue with green and gold mottling)")
+
+        elif dice_roll == 6:
+            await message.channel.send("Star ruby (translucent ruby with white star-shaped center)")
+
+        elif dice_roll == 7:
+            await message.channel.send("Star sapphire (translucent blue sapphire with white star-shaped center)")
+
+        elif dice_roll == 8:
+            await message.channel.send("Yellow sapphire (transparent fiery yellow or yellow-green)")
+
+        else:
+            pass
+
+        # 5000gp gemstones
+
+    if message.content.startswith('5000gpgemstones'):
+        dice_roll = randint(1, 4)
+
+        if dice_roll == 1:
+            await message.channel.send("Black sapphire (translucent lustrous black with glowing highlights)")
+
+        elif dice_roll == 2:
+            await message.channel.send("Diamond (trasnparent blue-white, canary, pink, brown, or blue)")
+
+        elif dice_roll == 3:
+            await message.channel.send("Jacinth (transparent fiery orange)")
+
+        elif dice_roll == 4:
+            await message.channel.send("Ruby (transparent clear red to deep crimson)")
+
+        else:
+            pass
+
+        # 25gp art
+
+    if message.content.startswith('25gpart'):
+        dice_roll = randint(1, 10)
+
+        if dice_roll == 1:
+            await message.channel.send("Silver ewer")
+
+        elif dice_roll == 2:
+            await message.channel.send("Carved bone statuette")
+
+        elif dice_roll == 3:
+            await message.channel.send("Small gold bracelet")
+
+        elif dice_roll == 4:
+            await message.channel.send("Cloth-of-gold vestments")
+
+        elif dice_roll == 5:
+            await message.channel.send("Black velvet mask stitched with silver thread")
+
+        elif dice_roll == 6:
+            await message.channel.send("Copper chalice with silver filigree")
+
+        elif dice_roll == 7:
+            await message.channel.send("Pair of engraved bonde dice")
+
+        elif dice_roll == 8:
+            await message.channel.send("Small mirror set in a painted wooden frame")
+
+        elif dice_roll == 9:
+            await message.channel.send("Embroidered silk handkerchief")
+
+        elif dice_roll == 10:
+            await message.channel.send("Gold locket with a painted portrait inside")
+
+    else:
+        pass
+
+        # 250gp art
+
+    if message.content.startswith('250gpart'):
+        dice_roll = randint(1, 10)
+
+        if dice_roll == 1:
+            await message.channel.send("Gold ring set with bloodstones")
+
+        elif dice_roll == 2:
+            await message.channel.send("Carved ivory statuette")
+
+        elif dice_roll == 3:
+            await message.channel.send("Large gold bracelet")
+
+        elif dice_roll == 4:
+            await message.channel.send("Silver necklace with a gemstone pendant")
+
+        elif dice_roll == 5:
+            await message.channel.send("Bronze crown")
+
+        elif dice_roll == 6:
+            await message.channel.send("Silk robe with gold embroidery")
+
+        elif dice_roll == 7:
+            await message.channel.send("Large well-known tapestry")
+
+        elif dice_roll == 8:
+            await message.channel.send("Brass mug with jade inlay")
+
+        elif dice_roll == 9:
+            await message.channel.send("Box of turquoise animal figurines")
+
+        elif dice_roll == 10:
+            await message.channel.send("Gold bird cage with electrum filigree")
+
+        else:
+            pass
+
+        # 750gp art
+
+    if message.content.startswith('750gpart'):
+        dice_roll = randint(1, 10)
+
+        if dice_roll == 1:
+            await message.channel.send("Silver chalice set with moonstones")
+
+        elif dice_roll == 2:
+            await message.channel.send("Silver-plated steel longsword with jet set in hilt")
+
+        elif dice_roll == 3:
+            await message.channel.send("Carved harp of exotic wood with ivory inlay and zircon gems")
+
+        elif dice_roll == 4:
+            await message.channel.send("Small gold idol")
+
+        elif dice_roll == 5:
+            await message.channel.send("Gold dragon comb set with red garnet as eyes")
+
+        elif dice_roll == 6:
+            await message.channel.send("Bottle stopper cork embossed with gold leaf and set with amethysts")
+
+        elif dice_roll == 7:
+            await message.channel.send("Ceremonial electrum dagger with a black pearl in the pommel")
+
+        elif dice_roll == 8:
+            await message.channel.send("Silver and gold brooch")
+
+        elif dice_roll == 9:
+            await message.channel.send("Obsidian statuette with gold fittings and inlay")
+
+        elif dice_roll == 10:
+            await message.channel.send("Painted gold war mask")
+
+        else:
+            pass
+
+            # 2500gp art
+
+    if message.content.startswith('2500gpart'):
+        dice_roll = randint(1, 10)
+
+        if dice_roll == 1:
+            await message.channel.send("Fine gold chain set with fire opal")
+
+        elif dice_roll == 2:
+            await message.channel.send("Old masterpiece painting")
+
+        elif dice_roll == 3:
+            await message.channel.send("Embroidered silk and velvet mantle set with numerous moonstones")
+
+        elif dice_roll == 4:
+            await message.channel.send("Platinum bracelet set with a sapphire")
+
+        elif dice_roll == 5:
+            await message.channel.send("Embroidered glove set with jewel chips")
+
+        elif dice_roll == 6:
+            await message.channel.send("Jeweled anklet")
+
+        elif dice_roll == 7:
+            await message.channel.send("Gold music box")
+
+        elif dice_roll == 8:
+            await message.channel.send("Gold circlet set with four aquamarines")
+
+        elif dice_roll == 9:
+            await message.channel.send("Eye patch with a mock eye set in blue sapphire and moonstone")
+
+        elif dice_roll == 10:
+            await message.channel.send("A necklace string of small pink pearls")
+
+    else:
+        pass
+
+        # 7500gp art
+
+    if message.content.startswith('7500gpart'):
+        dice_roll = randint(1, 8)
+
+        if dice_roll == 1:
+            await message.channel.send("Jeweled gold crown")
+
+        elif dice_roll == 2:
+            await message.channel.send("Jeweled platinum ring")
+
+        elif dice_roll == 3:
+            await message.channel.send("Small gold statuette set with rubies")
+
+        elif dice_roll == 4:
+            await message.channel.send("Gold cup set with emeralds")
+
+        elif dice_roll == 5:
+            await message.channel.send("Gold jewelry box with platinum filigree")
+
+        elif dice_roll == 6:
+            await message.channel.send("Painted gold child's sarcophagus")
+
+        elif dice_roll == 7:
+            await message.channel.send("Jade game board with solid gold playing pieces")
+
+        elif dice_roll == 8:
+            await message.channel.send("Bejeweled ivory drinking horn with gold filigree")
+
+    else:
+        pass
+
+        # Magic Item Rarity
+
+    if message.content.startswith('MIRC'):
+        await message.channel.send("Rarity is common")
+        await message.channel.send("Character level required is 1 or higher")
+        await message.channel.send("Value is 50 to 100gp")
+
+    elif message.content.startswith('MIRU'):
+        await message.channel.send("Rarity is uncommon")
+        await message.channel.send("Character level required is 1 or higher")
+        await message.channel.send("Value is 101 to 500gp")
+
+    elif message.content.startswith('MIRR'):
+        await message.channel.send("Rarity is rare")
+        await message.channel.send("Character level required is 5 or higher")
+        await message.channel.send("Value is 501 to 5,000gp")
+
+    elif message.content.startwith('MIRVR'):
+        await message.channel.send("Rarity is very rare")
+        await message.channel.send("Character level required is 11 or higher")
+        await message.channel.send("Value is 5,001 to 50,000gp")
+
+    elif message.content.startswith('MIRL'):
+        await message.channel.send("Rarity is legendary")
+        await message.channel.send("Character level required is 17 or higher")
+        await message.channel.send("Value is 50,001gp to higher")
+
+    else:
+        pass
+
     # Maps Go Here
     if message.content.startswith('?planesmap'):
         file = discord.File("Maps/Planes.png", filename="Maps/Planes.png")
@@ -306,162 +722,135 @@ async def on_message(message):
     else:
         pass
 
-    # Combat Rolls Go here
+    # Dice Rolls
 
     if message.content.startswith('1d4'):
         dice_roll = randint(1, 4)
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('1d6'):
         dice_roll = randint(1, 6)
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('1d8'):
         dice_roll = randint(1, 8)
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('1d10'):
         dice_roll = randint(1, 10)
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('1d12'):
         dice_roll = randint(1, 12)
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('2d4'):
         dice_roll = randint(1, 4) * 2
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('2d6'):
         dice_roll = randint(1, 6) * 2
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('2d8'):
         dice_roll = randint(1, 8) * 2
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('2d10'):
         dice_roll = randint(1, 10) * 2
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('2d12'):
         dice_roll = randint(1, 12) * 2
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('3d4'):
         dice_roll = randint(1, 4) * 3
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('3d6'):
         dice_roll = randint(1, 6) * 3
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('3d8'):
         dice_roll = randint(1, 8) * 3
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
-    elif message.content.startswith('2d10'):
+    elif message.content.startswith('3d10'):
         dice_roll = randint(1, 10) * 3
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('3d12'):
         dice_roll = randint(1, 12) * 3
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('4d4'):
         dice_roll = randint(1, 4) * 4
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('4d6'):
         dice_roll = randint(1, 6) * 4
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('4d8'):
         dice_roll = randint(1, 8) * 4
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('4d10'):
         dice_roll = randint(1, 10) * 4
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('4d12'):
         dice_roll = randint(1, 12) * 4
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('5d4'):
         dice_roll = randint(1, 4) * 5
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('5d6'):
         dice_roll = randint(1, 6) * 5
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('5d8'):
         dice_roll = randint(1, 8) * 5
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('5d10'):
         dice_roll = randint(1, 10) * 5
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('5d12'):
         dice_roll = randint(1, 12) * 5
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('6d4'):
         dice_roll = randint(1, 4) * 6
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('6d6'):
         dice_roll = randint(1, 6) * 6
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('6d8'):
         dice_roll = randint(1, 8) * 6
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('6d10'):
         dice_roll = randint(1, 10) * 6
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('6d12'):
         dice_roll = randint(1, 12) * 6
         await message.channel.send(dice_roll)
-        await message.channel.send("damage")
 
     elif message.content.startswith('1d20'):
         dice_roll = randint(1, 20)
         await message.channel.send(dice_roll)
-        await message.channel.send("Your initiative, do you get to go first or last?")
+
+    elif message.content.startswith('1d100'):
+        dice_roll = randint(1, 100)
+        await message.channel.send(dice_roll)
 
     else:
         pass
