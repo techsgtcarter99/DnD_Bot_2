@@ -1814,13 +1814,13 @@ async def on_message(message):
         file = discord.File("Monsters/yugoloths_2.png", filename="Monsters/yugoloths_2.png")
         await message.channel.send("Monsters/yugoloths_2.png", file=file)
 
-    elif message.content.startswith('beholder_zombie') :
+    elif message.content.startswith('beholder_zombie'):
         file = discord.File("Monsters/beholder_zombie.png", filename="Monsters/beholder_zombie.png")
         await message.channel.send("Monsters/beholder_zombie.png", file=file)
         file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
         await message.channel.send("Monsters/zombies.png", file=file)
 
-    elif message.content.startswith('ogre_zombie') :
+    elif message.content.startswith('ogre_zombie'):
         file = discord.File("Monsters/ogre_zombie.png", filename="Monsters/ogre_zombie.png")
         await message.channel.send("Monsters/ogre_zombie.png", file=file)
         file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
