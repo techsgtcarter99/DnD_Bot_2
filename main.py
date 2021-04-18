@@ -1409,6 +1409,422 @@ async def on_message(message):
     elif message.content.startswith('oni'):
         file = discord.File("Monsters/oni.png", filename="Monsters/oni.png")
         await message.channel.send("Monsters/oni.png", file=file)
+        
+    elif message.content.startswith('orc'):
+        file = discord.File("Monsters/orc.png", filename="Monsters/orc.png")
+        await message.channel.send("Monsters/orc.png", file=file)
+        file = discord.File("Monsters/orcs_1.png", filename="Monsters/orcs_1.png")
+        await message.channel.send("Monsters/orcs_1.png", file=file)
+        file = discord.File("Monsters/orcs_2.png", filename="Monsters/orcs_2.png")
+        await message.channel.send("Monsters/orcs_2.png", file=file)
+
+    elif message.content.startswith('orcs'):
+        file = discord.File("Monsters/orcs_1.png", filename="Monsters/orcs_1.png")
+        await message.channel.send("Monsters/orcs_1.png", file=file)
+        file = discord.File("Monsters/orcs_2.png", filename="Monsters/orcs_2.png")
+        await message.channel.send("Monsters/orcs_2.png", file=file)
+
+    elif message.content.startswith('orc_war_chief'):
+        file = discord.File("Monsters/orc_war_chief.png", filename="Monsters/orc_war_chief.png")
+        await message.channel.send("Monsters/orc_war_chief.png", file=file)
+        file = discord.File("Monsters/orcs_1.png", filename="Monsters/orcs_1.png")
+        await message.channel.send("Monsters/orcs_1.png", file=file)
+        file = discord.File("Monsters/orcs_2.png", filename="Monsters/orcs_2.png")
+        await message.channel.send("Monsters/orcs_2.png", file=file)
+
+    elif message.content.startswith('orc_eye_of_gruumsh'):
+        file = discord.File("Monsters/orc_eye_of_gruumsh.png", filename="Monsters/orc_eye_of_gruumsh.png")
+        await message.channel.send("Mosnters/orc_eye_of_gruumsh.png", file=file)
+        file = discord.File("Monsters/orcs_1.png", filename="Monsters/orcs_1.png")
+        await message.channel.send("Monsters/orcs_1.png", file=file)
+        file = discord.File("Monsters/orcs_2.png", filename="Monsters/orcs_2.png")
+        await message.channel.send("Monsters/orcs_2.png", file=file)
+
+    elif message.content.startswith('orog'):
+        file = discord.File("Monsters/orog.png", filename="Monsters/orog.png")
+        await message.channel.send("Monsters/orog.png", file=file)
+        file = discord.File("Monsters/orcs_1.png", filename="Monsters/orcs_1.png")
+        await message.channel.send("Monsters/orcs_1.png", file=file)
+        file = discord.File("Monsters/orcs_2.png", filename="Monsters/orcs_2.png")
+        await message.channel.send("Monsters/orcs_2.png", file=file)
+
+    elif message.content.startswith('otyugh'):
+        file = discord.File("Monsters/otyugh.png", filename="Monsters/otyugh.png")
+        await message.channel.send("Monsters/otyugh.png", file=file)
+
+    elif message.content.startswith('owlbear'):
+        file = discord.File("Monsters/owlbear.png", filename="Monsters/owlbear.png")
+        await message.channel.send("Monsters/owlbear.png", file=file)
+
+    elif message.content.startswith('pegasus'):
+        file = discord.File("Monsters/pegasus.png", filename="Monsters/pegasus.png")
+        await message.channel.send("Monsters/pegasus.png", file=file)
+
+    elif message.content.startswith('peryton'):
+        file = discord.File("Monsters/peryton.png", filename="Monsters/peryton.png")
+        await message.channel.send("Monsters/peryton.png", file=file)
+
+    elif message.content.startswith('piercer'):
+        file = discord.File("Monsters/piercer.png", filename="Monsters/piercer.png")
+        await message.channel.send("Monsters/piercequagr.png", file=file)
+
+    elif message.content.startswith('pixie'):
+        file = discord.File("Monsters/pixie.png", filename="Monsters/pixie.png")
+        await message.channel.send("Monsters/pixie.png", file=file)
+
+    elif message.content.startswith('pseudodragon'):
+        file = discord.File("Monsters/pseudodragon.png", filename="Monsters/pseudodragon.png")
+        await message.channel.send("Mosnters/pseudodragon.png", file=file)
+
+    elif message.content.startswith('purple_worm'):
+        file = discord.File("Monsters/purple_worm.png", filename="Monsters/purple_worm.png")
+        await message.channel.send("Monsters/purple_worm.png", file=file)
+
+    elif message.content.startswith('quaggoth'):
+        file = discord.File("Monsters/quaggoth.png", filename="Monsters/quaggoth.png")
+        await message.channel.send("Monsters/quaggoth.png", file=file)
+
+    elif message.content.startswith('rakshasa'):
+        file = discord.File("Monsters/rakshasa.png", filename="Monsters/rakshasa.png")
+        await message.channel.send("Monsters/rakshasa.png", file=file)
+
+    elif message.content.startswith('remorhazes'):
+        file = discord.File("Monsters/remorhazes.png", filename="Monsters/remorhazes.png")
+        await message.channel.send("Monsters/remorhazes.png", file=file)
+
+    elif message.content.startswith('fire_snake'):
+        file = discord.File("Monsters/fire_snake.png", filename="Monsters/fire_snake.png")
+        await message.channel.send("Monsters/fire_snake.png", file=file)
+
+    elif message.content.startswith('salamanders'):
+        file = discord.File("Monsters/salamanders.png", filename="Monsters/salamanders.png")
+        await message.channel.send("Monsters/salamanders.png", file=file)
+
+    elif message.content.startswith('salamander'):
+        file = discord.File("Monsters/salamander.png", filename="Monsters/salamander.png")
+        await message.channel.send("Monsters/slamander.png", file=file)
+        file = discord.File("Monsters/salamanders.png", filename="Monsters/salamanders.png")
+        await message.channel.send("Monsters/salamanders.png", file=file)
+
+    elif message.content.startswith('sahuagin'):
+        file = discord.File("Monsters/sahuagin.png", filename="Monsters/sahuagin.png")
+        await message.channel.send("Monsters/sahuagin.png", file=file)
+
+    elif message.content.startswith('sahuagin_baron'):
+        file = discord.File("Monsters/sahuagin_baron.png", filename="Monsters/sahuagin_baron.png")
+        await message.channel.send("Monsters/sahuagin_baron.png", file=file)
+        file = discord.File("Monsters/sahuagin.png", filename="Monsters/sahuagin.png")
+        await message.channel.send("Monsters/sahuagin.png", file=file)
+
+    elif message.content.startswith('sahuagin_priestess'):
+        file = discord.File("Monsters/sahuagin_priestess.png", filename="Monsters/sahuagin_priestess.png")
+        await message.channel.send("Monsters/sahuagin_priestess.png", file=file)
+        file = discord.File("Monsters/sahuagin.png", filename="Monsters/sahuagin.png")
+        await message.channel.send("Monsters/sahuagin.png", file=file)
+
+    elif message.content.startswith('satyr'):
+        file = discord.File("Monsters/satyr.png", filename="Monsters/satyr.png")
+        await message.channel.send("Monsters/satyr.png", file=file)
+
+    elif message.content.startswith('shadow'):
+        file = discord.File("Monsters/shadow.png", filename="Monsters/shadow.png")
+        await message.channel.send("Monsters/shadow.png", file=file)
+
+    elif message.content.startswith('scarecrow'):
+        file = discord.File("Monsters/scarecrow.png", filename="Monsters/scarecrow.png")
+        await message.channel.send("Monsters/scarecrow.png", file=file)
+
+    elif message.content.startswith('shambling_mound'):
+        file = discord.File("Monsters/shambling_mound.png", filename="Monsters/shambling_mound.png")
+        await message.channel.send("Monsters/shambling_mound.png", file=file)
+
+    elif message.content.startswith('shield_guardian'):
+        file = discord.File("Monsters/shield_guardian.png", filename="Monsters/shield_guardian.png")
+        await message.channel.send("Monsters/shield_guardian.png", file=file)
+
+    elif message.content.startswith('skeleton'):
+        file = discord.File("Monsters/skeleton.png", filename="Monsters/skeleton.png")
+        await message.channel.send("Monsters/skeleton.png", file=file)
+
+    elif message.content.startswith('slaadi'):
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('red_slaad'):
+        file = discord.File("Monsters/red_slaad.png", filename="Monsters/red_slaad.png")
+        await message.channel.send("Monsters/red_slaad.png", file=file)
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('blue_slaad'):
+        file = discord.File("Monsters/blue_slaad.png", filename="Monsters/blue_slaad.png")
+        await message.channel.send("Monsters/blue_slaad.png", file=file)
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('grey_slaad'):
+        file = discord.File("Monsters/grey_slaad.png", filename="Monsters/grey_slaad.png")
+        await message.channel.send("Monsters/grey_slaad.png", file=file)
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('death_slaad'):
+        file = discord.File("Monsters/death_slaad.png", filename="Monsters/death_slaad.png")
+        await message.channel.send("Monsters/death_slaad.png", file=file)
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('green_slaad'):
+        file = discord.File("Monsters/green_slaad.png", filename="Monsters/green_slaad.png")
+        await message.channel.send("Monsters/green_slaad.png", file=file)
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('slaad_tadpole'):
+        file = discord.File("Monsters/slaad_tadpole.png", filename="Monsters/slaad_tadpole.png")
+        await message.channel.send("Monsters/slaad_tadpole.png", file=file)
+        file = discord.File("Monsters/slaadi_1.png", filename="Monsters/slaadi_1.png")
+        await message.channel.send("Monsters/slaadi_1.png", file=file)
+        file = discord.File("Monsters/slaadi_2.png", filename="Monsters/slaadi_2.png")
+        await message.channel.send("Monsters/slaadi_2.png", file=file)
+
+    elif message.content.startswith('warhorse_skeleton'):
+        file = discord.File("Monsters/warhorse_skeleton.png", filename="Monsters/warhorse_skeleton.png")
+        await message.channel.send("Monsters/warhorse_skeleton.png", file=file)
+
+    elif message.content.startswith('minotaur_skeleton'):
+        file = discord.File("Monsters/minotaur_skeleton.png", filename="Monsters/minotaur_skeleton.png")
+        await message.channel.send("Monsters/minotaur_skeleton.png", file=file)
+
+    elif message.content.startswith('roper'):
+        file = discord.File("Monsters/roper.png", filename="Monsters/roper.png")
+        await message.channel.send("Monsters/roper.png", file=file)
+
+    elif message.content.startswith('roc'):
+        file = discord.File("Monsters/roc.png", filename="Monsters/roc.png")
+        await message.channel.send("Monsters/roc.png", file=file)
+
+    elif message.content.startswith('revenant'):
+        file = discord.File("Monsters/revenant.png", filename="Monsters/revenant.png")
+        await message.channel.send("Monsters/revenant.png", file=file)
+
+    elif message.content.startswith('rust_monster'):
+        file = discord.File("Monsters/rust_monster.png", filename="Monsters/rust_monster.png")
+        await message.channel.send("Monsters/rust_monster.png", file=file)
+
+    elif message.content.startswith('sphinxes'):
+        file = discord.File("Monsters/sphinxes.png", filename="Monsters/sphinxes.png")
+        await message.channel.send("Monsters/sphinxes.pnd", file=file)
+
+    elif message.content.startswith('androsphinx'):
+        file = discord.File("Monsters/androsphinx.png", filename="Monsters/andropshinx.png")
+        await message.channel.send("Monsters/androsphinx.png", file=file)
+        file = discord.File("Monsters/sphinxes.png", filename="Monsters/sphinxes.png")
+        await message.channel.send("Monsters/sphinxes.pnd", file=file)
+
+    elif message.content.startswith('gynosphinx'):
+        file = discord.File("Monsters/gynosphinx.png", filename="Monsters/gynosphinx.png")
+        await message.channel.send("Monsters/gynosphinx.png", file=file)
+        file = discord.File("Monsters/sphinxes.png", filename="Monsters/sphinxes.png")
+        await message.channel.send("Monsters/sphinxes.pnd", file=file)
+
+    elif message.content.startswith('sprite'):
+        file = discord.File("Monsters/sprite.png", filename="Monsters/sprite.png")
+        await message.channel.send("Monsters/sprite.png", file=file)
+
+    elif message.content.startswith('spectre'):
+        file = discord.File("Monsters/spectre.png", filename="Monsters/spectre.png")
+        await message.channel.send("Monsters/spectre.png", file=file)
+
+    elif message.content.startswith('succubus'):
+        file = discord.File("Monsters/succubus.png", filename="Monsters/succubus.png")
+        await message.channel.send("Monsters/succubus.png", file=file)
+
+    elif message.content.startswith('stirge'):
+        file = discord.File("Monsters/stirge.png", filename="Monsters/stirgre.png")
+        await message.channel.send("Monsters/stirge.png", file=file)
+
+    elif message.content.startswith('incubus'):
+        file = discord.File("Monsters/incubus.png", filename="Monsters/incubus.png")
+        await message.channel.send("Monsters/incubus.png", file=file)
+
+    elif message.content.startswith('thri_kreen'):
+        file = discord.File("Monsters/thri-kreen.png", filename="Monsters/thri-kreen.png")
+        await message.channel.send("Monsters/thri-kreen.png", file=file)
+
+    elif message.content.startswith('tarrasque'):
+        file = discord.File("Monsters/tarrasque_1.png", filename="Monsters/tarrasque_1.png")
+        await message.channel.send("Monsters/tarrasque_1.png", file=file)
+        file = discord.File("Monsters/tarrasque_2.png", filename="Monsters/tarrasque_2.png")
+        await message.channel.send("Monsters/tarrasque_2.png", file=file)
+
+    elif message.content.startswith('troll'):
+        file = discord.File("Monsters/troll.png", filename="Monsters/troll.png")
+        await message.channel.send("Monsters/troll.png", file=file)
+
+    elif message.content.startswith('troglodyte'):
+        file = discord.File("Monsters/troglodyte.png", filename="Monsters/troglodyte.png")
+        await message.channel.send("Monsters/troglodyte.png", file=file)
+
+    elif message.content.startswith('treant'):
+        file = discord.File("Monsters/treant.png", filename="Monsters/treant.png")
+        await message.channel.send("Monsters/treant.png", file=file)
+
+    elif message.content.startswith('umber_hulk'):
+        file = discord.File("Monsters/umber_hulk.png", filename="Monsters/umber_hulk.png")
+        await message.channel.send("Monsters/umber_hulk.png", file=file)
+
+    elif message.content.startswith('unicorn'):
+        file = discord.File("Monsters/unicorn_1.png", filename="Monsters/unicorn_1.png")
+        await message.channel.send("Monsters/unicorn_1.png", file=file)
+        file = discord.File("Monsters/unicorn_2.png", filename="Monsters/unicorn_2.png")
+        await message.channel.send("Monsters/unicorn_2.png", file=file)
+
+    elif message.content.startswith('vampires'):
+        file = discord.File("Monsters/vampires_1.png", filename="Monsters/vampires_1.png")
+        await message.channel.send("Monsters/vampires_1.png", file=file)
+        file = discord.File("Monsters/vampires_2.png", filename="Monsters/vampires_2.png")
+        await message.channel.send("Monsters/vampires_2.png", file=file)
+
+    elif message.content.startswith('vampire'):
+        file = discord.File("Monsters/vampire.png", filename="Monsters/vampire.png")
+        await message.channel.send("Monsters/vampire.png", file=file)
+        file = discord.File("Monsters/vampires_1.png", filename="Monsters/vampires_1.png")
+        await message.channel.send("Monsters/vampires_1.png", file=file)
+        file = discord.File("Monsters/vampires_2.png", filename="Monsters/vampires_2.png")
+        await message.channel.send("Monsters/vampires_2.png", file=file)
+
+    elif message.content.startswith("vampire_spawn"):
+        file = discord.File("Monsters/vampire_spawn.png", filename="Monsters/vampire_spawn.png")
+        await message.channel.send("Monsters/vampire_spawn.png", file=file)
+        file = discord.File("Monsters/vampires_1.png", filename="Monsters/vampires_1.png")
+        await message.channel.send("Monsters/vampires_1.png", file=file)
+        file = discord.File("Monsters/vampires_2.png", filename="Monsters/vampires_2.png")
+        await message.channel.send("Monsters/vampires_2.png", file=file)
+
+    elif message.content.startswith('water_weird'):
+        file = discord.File("Monsters/water_weird.png", filename="Monsters/water_weird.png")
+        await message.channel.send("Monsters/water_weird.png", file=file)
+
+    elif message.content.startswith('wight'):
+        file = discord.File("Monsters/wight.png", filename="Monsters/wight.png")
+        await message.channel.send("Monsters/wight.png", file=file)
+
+    elif message.content.startswith('will_o_wisp'):
+        file = discord.File("Monsters/will-o'-wisp.png", filename="Monsters/will-o'-wisp.png")
+        await message.channel.send("Monsters/will-o'-wisp.png", file=file)
+
+    elif message.content.startswith('wraith'):
+        file = discord.File("Monsters/wraith.png", filename="Monsters/wraith.png")
+        await message.channel.send("Monsters/wraith.png", file=file)
+
+    elif message.content.startswith('wyvern'):
+        file = discord.File("Monsters/wyvern.png", filename="Monsters/wyvern.png")
+        await message.channel.send("Monsters/wyvern.png", file=file)
+
+    elif message.content.startswith('xorn'):
+        file = discord.File("Monsters/xorn.png", filename="Monsters/xorn.png")
+        await message.channel.send("Monsters/xorn.png", file=file)
+
+    elif message.content.startswith('yeti'):
+        file = discord.File("Monsters/yeti_1.png", filename="Monsters/yeti_1.png")
+        await message.channel.send("Monsters/yeti_1.png", file=file)
+        file = discord.File("Monsters/yeti_2.png", filename="Monsters/yeti_2.png")
+        await message.channel.send("Monsters/yeti_2.png", file=file)
+
+    elif message.content.startswith('yuan_ti'):
+        file = discord.File("Monsters/yuan_ti.png", filename="Monsters/yuan_ti.png")
+        await message.channel.send("Monsters/yuan_ti.png", file=file)
+
+    elif message.content.startswith('yuan_ti_abomination'):
+        file = discord.File("Monsters/yuan_ti_abomination.png", filename="Monsters/yuan_ti_abomination.png")
+        await message.channel.send("Monsters/yuan_ti_abomination.png", file=file)
+        file = discord.File("Monsters/yuan_ti.png", filename="Monsters/yuan_ti.png")
+        await message.channel.send("Monsters/yuan_ti.png", file=file)
+
+    elif message.content.startswith('yuan_ti_malison'):
+        file = discord.File("Monsters/yuan_ti_malison.png", filename="Monsters/yuan_ti_malison.png")
+        await message.channel.send("Monsters/yuan_ti_malison.png", file=file)
+        file = discord.File("Monsters/yuan_ti.png", filename="Monsters/yuan_ti.png")
+        await message.channel.send("Monsters/yuan_ti.png", file=file)
+
+    elif message.content.startswith('yuan_ti_pureblood'):
+        file = discord.File("Monsters/yuan_ti_pureblood.png", filename="Monsters/yuan_ti_pureblood.png")
+        await message.channel.send("Monsters/yuan_ti_pureblood.png", file=file)
+        file = discord.File("Monsters/yuan_ti.png", filename="Monsters/yuan_ti.png")
+        await message.channel.send("Monsters/yuan_ti.png", file=file)
+
+    elif message.content.startswith('yugoloths'):
+        file = discord.File("Monsters/yugoloths_1.png", filename="Monsters/yugoloths_1.png")
+        await message.channel.send("Monsters/yugoloths_1.png", file=file)
+        file = discord.File("Monsters/yugoloths_2.png", filename="Monsters/yugoloths_2.png")
+        await message.channel.send("Monsters/yugoloths_2.png", file=file)
+
+    elif message.content.startswith('arcanaloth'):
+        file = discord.File("Monsters/arcanaloth.png", filename="Monsters/arcanaloth.png")
+        await message.channel.send("Monsters/arcanaloth.png", file=file)
+        file = discord.File("Monsters/yugoloths_1.png", filename="Monsters/yugoloths_1.png")
+        await message.channel.send("Monsters/yugoloths_1.png", file=file)
+        file = discord.File("Monsters/yugoloths_2.png", filename="Monsters/yugoloths_2.png")
+        await message.channel.send("Monsters/yugoloths_2.png", file=file)
+
+    elif message.content.startswith('nycaloth'):
+        file = discord.File("Monsters/nycaloth.png", filename="Monsters/nycaloth.png")
+        await message.channel.send("Monsters/nycaloth.png", file=file)
+        file = discord.File("Monsters/yugoloths_1.png", filename="Monsters/yugoloths_1.png")
+        await message.channel.send("Monsters/yugoloths_1.png", file=file)
+        file = discord.File("Monsters/yugoloths_2.png", filename="Monsters/yugoloths_2.png")
+        await message.channel.send("Monsters/yugoloths_2.png", file=file)
+
+    elif message.content.startswith('zombies'):
+        file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
+        await message.channel.send("Monsters/zombies.png", file=file)
+
+    elif message.content.startswith('zombie'):
+        file = discord.File("Monsters/zombie.png", filename="Monsters/zombie.png")
+        await message.channel.send("Monsters/zombie.png", file=file)
+        file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
+        await message.channel.send("Monsters/zombies.png", file=file)
+
+    elif message.content.startswith('mezzoloth'):
+        file = discord.File("Monsters/mezzoloth.png", filename="Monsters/mezzoloth.png")
+        await message.channel.send("Monsters/mezzoloth.png", file=file)
+        file = discord.File("Monsters/yugoloths_1.png", filename="Monsters/yugoloths_1.png")
+        await message.channel.send("Monsters/yugoloths_1.png", file=file)
+        file = discord.File("Monsters/yugoloths_2.png", filename="Monsters/yugoloths_2.png")
+        await message.channel.send("Monsters/yugoloths_2.png", file=file)
+
+    elif message.content.startswith('ultroloth'):
+        file = discord.File("Monsters/utlroloth.png", filename="Monsters/ultroloth.png")
+        await message.channel.send("Monsters/ultroloth.png", file=file)
+        file = discord.File("Monsters/yugoloths_1.png", filename="Monsters/yugoloths_1.png")
+        await message.channel.send("Monsters/yugoloths_1.png", file=file)
+        file = discord.File("Monsters/yugoloths_2.png", filename="Monsters/yugoloths_2.png")
+        await message.channel.send("Monsters/yugoloths_2.png", file=file)
+
+    elif message.content.startswith('beholder_zombie') :
+        file = discord.File("Monsters/beholder_zombie.png", filename="Monsters/beholder_zombie.png")
+        await message.channel.send("Monsters/beholder_zombie.png", file=file)
+        file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
+        await message.channel.send("Monsters/zombies.png", file=file)
+
+    elif message.content.startswith('ogre_zombie') :
+        file = discord.File("Monsters/ogre_zombie.png", filename="Monsters/ogre_zombie.png")
+        await message.channel.send("Monsters/ogre_zombie.png", file=file)
+        file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
+        await message.channel.send("Monsters/zombies.png", file=file)
 
     else:
         await message.channel.send("Please try again!")
