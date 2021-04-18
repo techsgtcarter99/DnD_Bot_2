@@ -1,7 +1,8 @@
 import discord
 from random import randint
 
-TOKEN = 'xxxxxxxxxxxxxxx'
+
+TOKEN = 'ODMzNDcwOTg1MTAxMjQ2NTU1.YHy0Vw.wJgzE_dEoQGXuweGKf7tHXBYQoU'
 
 client = discord.Client()
 
@@ -130,19 +131,19 @@ async def on_message(message):
         file = discord.File("Monsters/Bulette.png", filename="Monsters/Bulette.png")
         await message.channel.send("Monsters/Bulette.png", file=file)
 
-    elif message.content.sartswith('bullywug'):
+    elif message.content.startswith('bullywug'):
         file = discord.File("Monsters/Bullywug.png", filename="Monsters/Bullywug.png")
         await message.channel.send("Monsters/Bullywug.png", file=file)
 
-    elif message.content.sartswith('cambion'):
+    elif message.content.startswith('cambion'):
         file = discord.File("Monsters/cambion.png", filename="Monsters/cambion.png")
         await message.channel.send("Monsters/cambion.png", file=file)
 
-    elif message.content.sartswith('carrioncrawler'):
+    elif message.content.startswith('carrioncrawler'):
         file = discord.File("Monsters/carrion_crawler.png", filename="Monsters/carrion_crawler.png")
         await message.channel.send("Monsters/carrion_crawler.png", file=file)
 
-    elif message.content.sartswith('centaur'):
+    elif message.content.startswith('centaur'):
         file = discord.File("Monsters/centaur.png", filename="Monsters/centaur.png")
         await message.channel.send("Monsters/centaur.png", file=file)
 
@@ -594,7 +595,7 @@ async def on_message(message):
         file = discord.File("Monsters/elementals.png", filename="Monsters/elementals.png")
         await message.channel.send("Monsters/elementals.png", file=file)
 
-    elif message.content.startswtih('earth_elemental'):
+    elif message.content.startswith('earth_elemental'):
         file = discord.File("Monsters/earth_elemental.png", filename="Monsters/earth_elemental.png")
         await message.channel.send("Monsters/earth_elemental.png", file=file)
         file = discord.File("Monsters/elementals.png", filename="Monsters/elementals.png")
@@ -606,7 +607,7 @@ async def on_message(message):
         file = discord.File("Monsters/elementals.png", filename="Monsters/elementals.png")
         await message.channel.send("Monsters/elementals.png", file=file)
 
-    elif message.content.startswtih('water_elemental'):
+    elif message.content.startswith('water_elemental'):
         file = discord.File("Monsters/water_elemental.png", filename="Monsters/water_elemental.png")
         await message.channel.send("Monsters/water_elemental.png", file=file)
         file = discord.File("Monsters/elementals.png", filename="Monsters/elementals.png")
@@ -884,7 +885,7 @@ async def on_message(message):
         file = discord.File("Monsters/gnoll_pack_lord_2.png", filename="Monsters/gnoll_pack_lord_2.png")
         await message.channel.send("Monsters/gnoll_pack_lord_2.png", file=file)
 
-    elif message.content.statswith('gnoll_fang_of_yeenoghu'):
+    elif message.content.startswith('gnoll_fang_of_yeenoghu'):
         file = discord.File("Monsters/gnoll_fang_of_yeenoghu_1.png", filename="Monsters/gnoll_fang_of_yeenoghu_1.png")
         await message.channel.send("Monsters/gnoll_fang_of_yeenoghu_1.png", file=file)
         file = discord.File("Monsters/gnoll_fang_of_yeenoghu_2.png", filename="Monsters/gnoll_fang_of_yeenoghu_2.png")
@@ -1248,7 +1249,7 @@ async def on_message(message):
         file = discord.File("Monsters/merfolk.png", filename="Monsters/merfolk.png")
         await message.channel.send("Monsters/merfolk.png", file=file)
 
-    elif message.content.starswith('mind_flayer'):
+    elif message.content.startswith('mind_flayer'):
         file = discord.File("Monsters/mind_flayer_1.png", filename="Monsters/mind_flayer_1.png")
         await message.channel.send("Monsters/mind_flayer_1.png", file=file)
         file = discord.File("Monsters/mind_flayer_2.png", filename="Monsters/mind_flayer_2.png")
@@ -1826,12 +1827,9 @@ async def on_message(message):
         file = discord.File("Monsters/zombies.png", filename="Monsters/zombies.png")
         await message.channel.send("Monsters/zombies.png", file=file)
 
-    else:
-        await message.channel.send("Please try again!")
-
     # challenge rating 0-4 treasure rolling
 
-    if message.content.startswith("0-4treasure_roll"):
+    elif message.content.startswith("0-4treasure_roll"):
         treasure_roll = randint(1, 100)
 
         if treasure_roll <= 30:
@@ -1864,12 +1862,9 @@ async def on_message(message):
             await message.channel.send(dice_roll)
             await message.channel.send("This is PP treasure.")
 
-    else:
-        pass
-
     # 5-10 challenge rating treasure rolling
 
-    if message.content.startswith("5-10treasure_roll"):
+    elif message.content.startswith("5-10treasure_roll"):
         treasure_roll = randint(1, 100)
 
         if treasure_roll <= 30:
@@ -1914,91 +1909,82 @@ async def on_message(message):
             await message.channel.send(dice_rollb)
             await message.channel.send("This is PP treasure.")
 
-    else:
-        pass
-
         # 11-16 challenge rating treasure rolling
 
-        if message.content.startswith("11-16treasure_roll"):
-            treasure_roll = randint(1, 100)
-
-            if treasure_roll <= 20:
-                await message.channel.send(treasure_roll)
-                dice_rolla = randint(1, 6) * 4
-                await message.channel.send(dice_rolla * 100)
-                await message.channel.send("This is SP treasure.")
-                dice_rollb = randint(1, 6)
-                await message.channel.send(dice_rollb * 100)
-                await message.channel.send("This is GP treasure.")
-
-            elif 20 < treasure_roll <= 35:
-                await message.channel.send(treasure_roll)
-                dice_rolla = randint(1, 6)
-                await message.channel.send(dice_rolla * 100)
-                await message.channel.send("This is EP treasure.")
-                dice_rollb = randint(1, 6)
-                await message.channel.send(dice_rollb * 100)
-                await message.channel.send("This is GP treasure.")
-
-            elif 35 < treasure_roll <= 75:
-                await message.channel.send(treasure_roll)
-                dice_rolla = randint(1, 6) * 2
-                await message.channel.send(dice_rolla * 100)
-                await message.channel.send("This is GP treasure.")
-                dice_rollb = randint(1, 6)
-                await message.channel.send(dice_rollb * 10)
-                await message.channel.send("This is PP treasure.")
-
-            elif 75 < treasure_roll <= 100:
-                await message.channel.send(treasure_roll)
-                dice_rolla = randint(1, 6) * 2
-                await message.channel.send(dice_rolla * 100)
-                await message.channel.send("This is GP treasure.")
-                dice_rollb = randint(1, 6) * 2
-                await message.channel.send(dice_rollb * 10)
-                await message.channel.send("This is PP treasure.")
-
-        else:
-            pass
-
-    # 17+ challenge rating treasure rolling
-
-    if message.content.startswith("17+treasure_roll"):
+    elif message.content.startswith("11-16treasure_roll"):
         treasure_roll = randint(1, 100)
 
-    if treasure_roll <= 15:
-        await message.channel.send(treasure_roll)
-        dice_rolla = randint(1, 6) * 2
-        await message.channel.send(dice_rolla * 1000)
-        await message.channel.send("This is EP treasure.")
-        dice_rollb = randint(1, 6) * 8
-        await message.channel.send(dice_rollb * 100)
-        await message.channel.send("This is GP treasure.")
+        if treasure_roll <= 20:
+            await message.channel.send(treasure_roll)
+            dice_rolla = randint(1, 6) * 4
+            await message.channel.send(dice_rolla * 100)
+            await message.channel.send("This is SP treasure.")
+            dice_rollb = randint(1, 6)
+            await message.channel.send(dice_rollb * 100)
+            await message.channel.send("This is GP treasure.")
 
-    elif 15 < treasure_roll <= 55:
-        await message.channel.send(treasure_roll)
-        dice_rolla = randint(1, 6)
-        await message.channel.send(dice_rolla * 1000)
-        await message.channel.send("This is GP treasure.")
-        dice_rollb = randint(1, 6)
-        await message.channel.send(dice_rollb * 100)
-        await message.channel.send("This is PP treasure.")
+        elif 20 < treasure_roll <= 35:
+             await message.channel.send(treasure_roll)
+             dice_rolla = randint(1, 6)
+             await message.channel.send(dice_rolla * 100)
+             await message.channel.send("This is EP treasure.")
+             dice_rollb = randint(1, 6)
+             await message.channel.send(dice_rollb * 100)
+             await message.channel.send("This is GP treasure.")
 
-    elif 55 < treasure_roll <= 100:
-        await message.channel.send(treasure_roll)
-        dice_rolla = randint(1, 6)
-        await message.channel.send(dice_rolla * 1000)
-        await message.channel.send("This is GP treasure.")
-        dice_rollb = randint(1, 6) * 2
-        await message.channel.send(dice_rollb * 10)
-        await message.channel.send("This is PP treasure.")
+        elif 35 < treasure_roll <= 75:
+             await message.channel.send(treasure_roll)
+             dice_rolla = randint(1, 6) * 2
+             await message.channel.send(dice_rolla * 100)
+             await message.channel.send("This is GP treasure.")
+             dice_rollb = randint(1, 6)
+             await message.channel.send(dice_rollb * 10)
+             await message.channel.send("This is PP treasure.")
 
-    else:
-        pass
+        elif 75 < treasure_roll <= 100:
+             await message.channel.send(treasure_roll)
+             dice_rolla = randint(1, 6) * 2
+             await message.channel.send(dice_rolla * 100)
+             await message.channel.send("This is GP treasure.")
+             dice_rollb = randint(1, 6) * 2
+             await message.channel.send(dice_rollb * 10)
+             await message.channel.send("This is PP treasure.")
+
+
+    # 17+ challenge rating treasure rolling
+    elif message.content.startswith("17+treasure_roll"):
+        treasure_roll = randint(1, 100)
+
+        if treasure_roll <= 15:
+            await message.channel.send(treasure_roll)
+            dice_rolla = randint(1, 6) * 2
+            await message.channel.send(dice_rolla * 1000)
+            await message.channel.send("This is EP treasure.")
+            dice_rollb = randint(1, 6) * 8
+            await message.channel.send(dice_rollb * 100)
+            await message.channel.send("This is GP treasure.")
+
+        elif 15 < treasure_roll <= 55:
+            await message.channel.send(treasure_roll)
+            dice_rolla = randint(1, 6)
+            await message.channel.send(dice_rolla * 1000)
+            await message.channel.send("This is GP treasure.")
+            dice_rollb = randint(1, 6)
+            await message.channel.send(dice_rollb * 100)
+            await message.channel.send("This is PP treasure.")
+
+        elif 55 < treasure_roll <= 100:
+            await message.channel.send(treasure_roll)
+            dice_rolla = randint(1, 6)
+            await message.channel.send(dice_rolla * 1000)
+            await message.channel.send("This is GP treasure.")
+            dice_rollb = randint(1, 6) * 2
+            await message.channel.send(dice_rollb * 10)
+            await message.channel.send("This is PP treasure.")
 
     # treasure 10gp gemstone rolling
 
-    if message.content.startswith('10gpgemstones'):
+    elif message.content.startswith('10gpgemstones'):
         dice_roll = randint(1, 12)
 
         if dice_roll == 1:
@@ -2037,12 +2023,11 @@ async def on_message(message):
         elif dice_roll == 12:
             await message.channel.send("Turqouise (opaque light blue-green)")
 
-    else:
-        pass
+
 
         # 50gp treasure rolling
 
-    if message.content.startswith('50gpgemstones'):
+    elif message.content.startswith('50gpgemstones'):
         dice_roll = randint(1, 12)
 
         if dice_roll == 1:
@@ -2081,12 +2066,11 @@ async def on_message(message):
         elif dice_roll == 12:
             await message.channel.send("Zircon (transparent pale blue-green)")
 
-    else:
-        pass
+
 
     # 100gp gemstones
 
-    if message.content.startswith('100gpgemstones'):
+    elif message.content.startswith('100gpgemstones'):
         dice_roll = randint(1, 10)
 
         if dice_roll == 1:
@@ -2119,12 +2103,11 @@ async def on_message(message):
         elif dice_roll == 10:
             await message.channel.send("Tourmaline (transparent pale green, blue, brown, or red")
 
-    else:
-        pass
+
 
         # 500gp gemstones
 
-    if message.content.startswith('500gpgemstones'):
+    elif message.content.startswith('500gpgemstones'):
         dice_roll = randint(1, 6)
 
         if dice_roll == 1:
@@ -2144,12 +2127,11 @@ async def on_message(message):
 
         elif dice_roll == 6:
             await message.channel.send("Topaz (transparent golden yellow)")
-    else:
-        pass
+
 
         # 1000gp gemstones
 
-    if message.content.startswith('1000gpgemstones'):
+    elif message.content.startswith('1000gpgemstones'):
         dice_roll = randint(1, 8)
 
         if dice_roll == 1:
@@ -2176,12 +2158,11 @@ async def on_message(message):
         elif dice_roll == 8:
             await message.channel.send("Yellow sapphire (transparent fiery yellow or yellow-green)")
 
-        else:
-            pass
+
 
         # 5000gp gemstones
 
-    if message.content.startswith('5000gpgemstones'):
+    elif message.content.startswith('5000gpgemstones'):
         dice_roll = randint(1, 4)
 
         if dice_roll == 1:
@@ -2196,12 +2177,10 @@ async def on_message(message):
         elif dice_roll == 4:
             await message.channel.send("Ruby (transparent clear red to deep crimson)")
 
-        else:
-            pass
 
         # 25gp art
 
-    if message.content.startswith('25gpart'):
+    elif message.content.startswith('25gpart'):
         dice_roll = randint(1, 10)
 
         if dice_roll == 1:
@@ -2234,12 +2213,10 @@ async def on_message(message):
         elif dice_roll == 10:
             await message.channel.send("Gold locket with a painted portrait inside")
 
-    else:
-        pass
 
         # 250gp art
 
-    if message.content.startswith('250gpart'):
+    elif message.content.startswith('250gpart'):
         dice_roll = randint(1, 10)
 
         if dice_roll == 1:
@@ -2272,12 +2249,9 @@ async def on_message(message):
         elif dice_roll == 10:
             await message.channel.send("Gold bird cage with electrum filigree")
 
-        else:
-            pass
-
         # 750gp art
 
-    if message.content.startswith('750gpart'):
+    elif message.content.startswith('750gpart'):
         dice_roll = randint(1, 10)
 
         if dice_roll == 1:
@@ -2310,12 +2284,11 @@ async def on_message(message):
         elif dice_roll == 10:
             await message.channel.send("Painted gold war mask")
 
-        else:
-            pass
+
 
             # 2500gp art
 
-    if message.content.startswith('2500gpart'):
+    elif message.content.startswith('2500gpart'):
         dice_roll = randint(1, 10)
 
         if dice_roll == 1:
@@ -2348,12 +2321,11 @@ async def on_message(message):
         elif dice_roll == 10:
             await message.channel.send("A necklace string of small pink pearls")
 
-    else:
-        pass
+
 
         # 7500gp art
 
-    if message.content.startswith('7500gpart'):
+    elif message.content.startswith('7500gpart'):
         dice_roll = randint(1, 8)
 
         if dice_roll == 1:
@@ -2380,12 +2352,10 @@ async def on_message(message):
         elif dice_roll == 8:
             await message.channel.send("Bejeweled ivory drinking horn with gold filigree")
 
-    else:
-        pass
 
         # Magic Item Rarity
 
-    if message.content.startswith('MIRC'):
+    elif message.content.startswith('MIRC'):
         await message.channel.send("Rarity is common")
         await message.channel.send("Character level required is 1 or higher")
         await message.channel.send("Value is 50 to 100gp")
@@ -2410,20 +2380,17 @@ async def on_message(message):
         await message.channel.send("Character level required is 17 or higher")
         await message.channel.send("Value is 50,001gp to higher")
 
-    else:
-        pass
+
 
     # Maps Go Here
-    if message.content.startswith('?planesmap'):
+    elif message.content.startswith('?planesmap'):
         file = discord.File("Maps/Planes.png", filename="Maps/Planes.png")
         await message.channel.send("Maps/Planes.png", file=file)
 
-    else:
-        pass
 
     # Dice Rolls
 
-    if message.content.startswith('1d4'):
+    elif message.content.startswith('1d4'):
         dice_roll = randint(1, 4)
         await message.channel.send(dice_roll)
 
@@ -2553,7 +2520,6 @@ async def on_message(message):
 
     else:
         pass
-
 
 @client.event
 async def on_ready():
